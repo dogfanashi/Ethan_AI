@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ethan AI - School & Programming Assistant</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+<aside>
+  <div class="brand">
+    <div class="logo"><img src="assets/logo.png" alt="Ethan AI logo"><b>E</b></div>
+    <div><strong>Ethan AI</strong><small>School & coding assistant</small></div>
+  </div>
+  <button id="newChat">+ New chat</button>
+  <label>MODE</label>
+  <button class="mode active" data-mode="general">💬 General</button>
+  <button class="mode" data-mode="school">📚 School Tutor</button>
+  <button class="mode" data-mode="programming">💻 Programmer</button>
+  <footer>Ethan AI v0.1<br>Built for learning.</footer>
+</aside>
+
+<main>
+<header>
+  <div><span>ETHAN AI</span><h1 id="title">How can I help?</h1></div>
+  <button id="clear">⌫</button>
+</header>
+
+<section id="chat">
+  <div class="welcome">
+    <div class="big">E</div>
+    <h2>What's up?</h2>
+    <p>Ask Ethan about homework, studying, programming, debugging, or a project.</p>
+    <div class="chips">
+      <button data-p="Explain photosynthesis like I'm learning it for the first time.">📚 Explain a concept</button>
+      <button data-p="Help me debug this Python code.">🐛 Debug code</button>
+      <button data-p="Quiz me on a topic.">🧠 Quiz me</button>
+    </div>
+  </div>
+</section>
+
+<form id="form">
+  <textarea id="input" placeholder="Ask Ethan anything..." rows="1"></textarea>
+  <button type="submit">➤</button>
+</form>
+<small class="note">Ethan AI can make mistakes. Check important information.</small>
+</main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+*{box-sizing:border-box}
+body{margin:0;background:#07101f;color:#edf4ff;font-family:Inter,system-ui,sans-serif}
+.app{min-height:100vh;display:grid;grid-template-columns:270px 1fr}
+aside{padding:22px;border-right:1px solid #20314b;background:#081426;display:flex;flex-direction:column;gap:10px}
+.brand{display:flex;gap:12px;align-items:center;margin-bottom:14px}
+.logo,.big{width:44px;height:44px;border-radius:13px;background:linear-gradient(135deg,#69a8ff,#8f7cff);display:grid;place-items:center;font-weight:900;overflow:hidden}
+.logo img{width:100%;height:100%;object-fit:cover}
+.logo b{display:none}
+.brand strong{display:block}.brand small{color:#91a4bf;font-size:11px}
+aside button,.chips button,header button{border:1px solid #20314b;background:#0c1729;color:#edf4ff;border-radius:10px;padding:10px;text-align:left;cursor:pointer}
+aside label{color:#71839c;font-size:10px;letter-spacing:.15em;margin-top:18px}
+.mode.active{background:#122542;border-color:#4675ad}
+footer{margin-top:auto;color:#71839c;font-size:11px}
+main{min-width:0;display:grid;grid-template-rows:auto 1fr auto auto;min-height:100vh}
+header{padding:24px 7%;display:flex;justify-content:space-between}
+header span{color:#69a8ff;font-size:10px;letter-spacing:.18em;font-weight:800}
+h1{font-size:24px;margin:5px 0}
+#chat{width:min(900px,88%);margin:auto;padding:25px 0 110px}
+.welcome{text-align:center;max-width:700px;margin:auto}
+.big{width:64px;height:64px;margin:auto;font-size:28px}
+.welcome h2{font-size:34px;margin:18px 0 8px}.welcome p{color:#91a4bf}
+.chips{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+.message{display:flex;gap:12px;margin:20px 0;line-height:1.65}
+.avatar{width:32px;height:32px;flex:none;border-radius:9px;background:#122542;display:grid;place-items:center;font-size:11px}
+.bubble{white-space:pre-wrap;overflow-wrap:anywhere}
+#form{width:min(900px,88%);margin:auto auto 8px;border:1px solid #20314b;background:#0c1729;border-radius:18px;padding:10px;display:flex;gap:10px}
+#input{flex:1;background:transparent;color:#edf4ff;border:0;outline:0;resize:none;padding:10px}
+#form>button{width:44px;border:0;border-radius:12px;background:linear-gradient(135deg,#69a8ff,#8f7cff);color:white;font-size:18px}
+.note{text-align:center;color:#71839c;font-size:10px;margin-bottom:12px}
+@media(max-width:800px){.app{grid-template-columns:1fr}aside{display:none}#chat,#form{width:90%}}
